@@ -12,4 +12,4 @@
 !/log/.keep
 /tmp
 /db/*
-/config/database.yml
+*/database.yml
