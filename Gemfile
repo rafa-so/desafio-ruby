@@ -34,3 +34,5 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'devise'
 
 gem 'httpparty'
+
+gem 'rails_admin', '~> 1.2'
