@@ -33,6 +33,5 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # gem 'capistrano-rails', group: :development
 gem 'devise'
 
-gem 'httpparty'
-
+gem 'rest-client'
 gem 'rails_admin', '~> 1.2'

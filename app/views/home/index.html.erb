@@ -1,8 +1,42 @@
 
+
 <h2>OUTER</h2>
 <h4>Mulher</h4>
 <h4>Homem</h4>
 <h4>Kids</h4>
 <hr/>
 <div><%= link_to 'Entrar', new_user_session_path %></div>
+<div><%= link_to 'Cadastrar', new_user_registration_path %></div>
 <div><%= link_to 'Sair', destroy_user_session_path %></div>
+
+
+
+<hr/>
+
+<%= form_tag(root_path, method: :get) do  %>
+  <%= text_field_tag 'search', '', placeholder: 'Enter search term...'  %>
+  <%= submit_tag 'Search' %>
+<% end  %>
+
+<table>
+  <% @todos_produtos.each do |product| %>
+    <tr>
+      <td>
+        <table>
+          <tr>
+            <td><img class ="image_grid" src="<%= product.image %>" /></td>
+          </tr>
+          <tr>
+           <td class="titulo"><%= product.productName  %></td>
+          </tr>
+          <tr>
+          <td><%= product.price  %></td>
+          </tr>
+          <tr>
+          <td><%= product.plots%></td>
+          </tr>
+        </table>
+      </td>
+   </tr>
+  <% end %>
+</table>
