@@ -35,3 +35,4 @@ gem 'devise'
 
 gem 'rest-client'
 gem 'rails_admin', '~> 1.2'
+gem 'bootstrap-sass'
